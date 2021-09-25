@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Azur Lane Tier List</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<html>
+
+<body>
+
+<header>
+    <div class="flex">
+        <a href="#" class="logo">Tier list</a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="https://discord.com/invite/azurlane" target="_blank">Discord</a></li>
+                    <li><a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki" target="_blank">Wikia</a></li>
+                    <li><a href="https://azurlane.yo-star.com" target="_blank">YoStar</a></li>
+                </ul>
+            </nav>
+    </div>
+</header>
+
+<section class="noshirobg"></section>
+
+<img id ="png1" src="amazonpointer.png">
+<img class = "center" id ="azl" src="azlogo.png" >
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+</script>
+
+<script type="text/javascript">
+
+$(window).scroll(function(){
+        var scroll_position = $(window).scroll();
+        $("section").css({
+            "background-position-x" : + scroll_position + "px",
+    })
+})
+
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+        body.classList.remove("scroll-up");
+        return;
+    }
+
+    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up");
+        body.classList.add("scroll-down");
+    } else if (
+        currentScroll < lastScroll &&
+        body.classList.contains("scroll-down")
+    ) {
+        body.classList.remove("scroll-down");
+        body.classList.add("scroll-up");
+    }
+    lastScroll = currentScroll;
+});
+
+</script>
+
+</body>
+
+</html>
