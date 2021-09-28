@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/azlogo.png"> <!--Favicon-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"><!--Page Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> <!--Logo font--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> <!--Card font-->
     <meta charset="utf-8">
-    <title>Azur Lane Tier List</title>
+    <title>AZ Project</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,23 +17,53 @@
 
 <header>
     <div class="flex">
-        <a href="#" class="logo">Tier list</a>
+        <a href="#" class="logo">AZ Project</a>
             <nav>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="https://discord.com/invite/azurlane" target="_blank">Discord</a></li>
                     <li><a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki" target="_blank">Wikia</a></li>
-                    <li><a href="https://azurlane.yo-star.com" target="_blank">YoStar</a></li>
+                    <li><a href="https://azurlane.yo-star.com" target="_blank">Yo-Star</a></li>
                 </ul>
             </nav>
     </div>
+
+<h1 class="newevent">New Event!</h1>
+
 </header>
 
-<section class="noshirobg"></section>
+<div class="container">
+    <div class="card">
+        <div class="circle"></div>
+            <div class="content">
+                <h2>Fleet Build</h2>
+                <p>Post-modem disposable chrome Kowloon A.I. render-farm stimulate realism paranoid drone knife bomb industrial grade kanji wristwatch spook. Cartel towards Shibuya nodal point courier military-grade Kowloon crypto-beef noodles neon monofilament.</p>
+           <a href="https://slaimuda.github.io/ectl/#/fleetmaker" target="_blank">Build your fleet</a></li>
+    </div>
+        <img src="img/helena.png">
+</div>
 
-<img id ="png1" src="img/amazonpointer.png">
-<img class = "center" id ="azl" src="img/azlogo.png">
+<div class="card">
+        <div class="circle"></div>
+            <div class="content">
+                <h2>Upon the Shimmering Blue</h2>
+                <p>This major Sakura Empire themed event features the addition of six new shipgirls including the third Ultra Rare ship Shimakaze.</p>
+            <nav>
+                <ul>
+                    <li><a href="https://azurlane.koumakan.jp/Upon_the_Shimmering_Blue" target="_blank">Go to Wikia page Event</a></li>
+                    <li><a id="trailer" href="https://www.youtube.com/watch?v=ng3oRUED5dU" target="_blank">Trailer</a></li>
+                </ul>
+            </nav>
+        </div>
+            <img src="img/shimakaze2.png">
+    </div>
+</div>
 
+<img class="center" id="azl" src="img/azlogo.png">
+
+<section class="sector2"></section>
+
+<!--Parallax img-->
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -46,6 +78,8 @@ $(window).scroll(function(){
             "background-position-x" : + scroll_position + "px",
     })
 })
+
+//Sticky header
 
 const body = document.body;
 let lastScroll = 0;
@@ -69,8 +103,11 @@ window.addEventListener("scroll", () => {
     }
     lastScroll = currentScroll;
 });
-
 </script>
+
+
+
+<footer></footer>
 
 </body>
 
